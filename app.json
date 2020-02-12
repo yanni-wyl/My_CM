@@ -3,7 +3,8 @@
     "pages/rollCall/rollCall",
     "pages/homeWork/homeWork",
     "pages/personalCenter/personalCenter",
-    "pages/rC_success/rC_success"
+    "pages/rC_success/rC_success",
+    "pages/signIn/signIn"
   ],
   "window": {
     "backgroundTextStyle": "light",
