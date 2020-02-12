@@ -5,7 +5,8 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    longitude: "",
+    latitude: "",
   },
 
   /**
@@ -26,7 +27,23 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
+    this.getLocation();
+    this.mapCtx = wx.createMapContext('map')
+  },
 
+  getLocation: function() {
+    //获取当前位置API-->wx.getLocation
+    wx.getLocation({
+      type: 'gcj02',
+      success: this.hanleGetLocationSucc
+    })
+  },
+  hanleGetLocationSucc: function(res) {
+    console.log(res);
+    this.setData({
+      longitude: res.longitude,
+      latitude: res.latitude
+    })
   },
 
   /**
