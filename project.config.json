@@ -1,0 +1,77 @@
+{
+	"description": "项目配置文件",
+	"packOptions": {
+		"ignore": []
+	},
+	"setting": {
+		"urlCheck": false,
+		"es6": true,
+		"postcss": true,
+		"minified": true,
+		"newFeature": true
+	},
+	"compileType": "miniprogram",
+	"libVersion": "2.0.4",
+	"appid": "wxb29d539f157b017f",
+	"projectname": "MyCM",
+	"debugOptions": {
+		"hidedInDevtools": []
+	},
+	"isGameTourist": false,
+	"simulatorType": "wechat",
+	"simulatorPluginLibVersion": {},
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
+		"game": {
+			"currentL": -1,
+			"list": []
+		},
+		"gamePlugin": {
+			"current": -1,
+			"list": []
+		},
+		"miniprogram": {
+			"current": -1,
+			"list": [
+				{
+					"id": -1,
+					"name": "rollCall——点名",
+					"pathName": "pages/rollCall/rollCall",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "homeWork——作业",
+					"pathName": "pages/homeWork/homeWork",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "personalCenter——个人中心",
+					"pathName": "pages/personalCenter/personalCenter",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "rC_success——签到成功",
+					"pathName": "pages/rC_success/rC_success",
+					"scene": null
+				}
+			]
+		}
+	}
+}
