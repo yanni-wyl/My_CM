@@ -1,10 +1,12 @@
 {
   "pages": [
-    "pages/rollCall/rollCall",
+    "pages/index/index",
     "pages/homeWork/homeWork",
     "pages/personalCenter/personalCenter",
     "pages/rC_success/rC_success",
-    "pages/signIn/signIn"
+    "pages/signIn/signIn",
+    "pages/rollCall/rollCall",
+    "pages/message/message"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -15,8 +17,8 @@
   "tabBar": {
     "list": [
       {
-        "pagePath": "pages/rollCall/rollCall",
-        "text": "点名",
+        "pagePath": "pages/index/index",
+        "text": "首页",
         "iconPath": "pages/images/rollCall.png",
         "selectedIconPath": "pages/images/rollCall_S.png"
       },
@@ -25,13 +27,19 @@
         "text": "作业",
         "iconPath": "pages/images/homeWork.png",
         "selectedIconPath": "pages/images/homeWork_S.png"
+      },{
+          "pagePath": "pages/message/message",
+          "text": "消息",
+          "iconPath": "pages/images/message.png",
+          "selectedIconPath": "pages/images/message_S.png"
+
       },
       {
         "pagePath": "pages/personalCenter/personalCenter",
         "text": "个人中心",
         "iconPath": "pages/images/personal.png",
         "selectedIconPath": "pages/images/personal_S.png"
-      }
+        }
     ],
     "color": "black",
     "selectedColor": "#13227a",

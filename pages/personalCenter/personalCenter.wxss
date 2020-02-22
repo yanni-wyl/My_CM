@@ -1,1 +1,75 @@
 /* pages/personalCenter/personalCenter.wxss */
+page {
+  height: 100%;
+  width: 100%
+}
+
+.top {
+  height: 24%;
+  border-bottom: 1px solid #ddd;
+}
+
+.userInfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 22rpx;
+  border-radius: 50%;
+}
+
+.userinfo-nickname {
+  color: #aaa;
+}
+
+.settings {
+  height: 80%;
+}
+
+.middle {
+  border-bottom: 1px solid #ddd;
+  font-size: 32rpx;
+  padding-left: 10%;
+  padding-bottom: 2%;
+  padding-top: 2%;
+}
+
+.edit {
+  line-height: -50rpx;
+}
+
+.icon {
+  width: 36rpx;
+  height: 36rpx;
+  background-size: 36rpx 36rpx;
+  margin-top: 18rpx;
+  /* margin-left: 22rpx; */
+  margin-right: 24rpx;
+  display: inline-block;
+}
+
+.a {
+  background-image: url(https://i.loli.net/2020/02/21/exKfvkswJTaD5cm.png);
+}
+
+.b {
+  background-image: url(https://i.loli.net/2020/02/21/nZLBRY85AaqytFe.png);
+}
+
+.c {
+  background-image: url(https://i.loli.net/2020/02/21/Pw9ChWrd4YXLSAs.png);
+}
+
+.d {
+  background-image: url(https://i.loli.net/2020/02/21/tHeB3fbG6vhdxYW.png);
+}
+
+.e {
+  margin-left: 60%;
+  background-image: url(https://i.loli.net/2020/02/21/ZcifSm4EYQT9J8F.png);
+
+}

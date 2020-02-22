@@ -69,6 +69,20 @@
 					"id": -1,
 					"name": "rC_success——签到成功",
 					"pathName": "pages/rC_success/rC_success",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/signIn/signIn",
+					"pathName": "pages/signIn/signIn",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/index/index",
+					"pathName": "pages/index/index",
 					"scene": null
 				}
 			]

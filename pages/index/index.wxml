@@ -1,0 +1,18 @@
+<!--pages/rollCall/rollCall.wxml-->
+<view class='map-container'>
+	<map class='map' id="map" longitude="{{longitude}}" latitude="{{latitude}}" scale="14" show-location='{{true}}' controls='{{controls}}' bindcontroltap="controltap" markers="{{markers}}" bindmarkertap='markertap'></map>
+</view>
+<view class="btns">
+	<view class='btn btn-rollCall'>
+		<navigator url="/pages/rollCall/rollCall">点名</navigator>
+	</view>
+	<view class='btn btn-sigIn'>
+		<navigator url="/pages/signIn/signIn">签到</navigator>
+	</view>
+	<view class='btn btn-leave'>
+		<navigator url="/pages/rollCall/rollCall">请假</navigator>
+	</view>
+	<view class='btn btn-record'>
+		<navigator url="/pages/rollCall/rollCall">记录</navigator>
+	</view>
+</view>

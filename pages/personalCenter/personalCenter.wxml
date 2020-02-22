@@ -1,2 +1,36 @@
 <!--pages/personalCenter/personalCenter.wxml-->
-<text>pages/personalCenter/personalCenter.wxml</text>
+<view class="top">
+	<view class="userInfo">
+		<button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 点击登录 </button>
+		<block wx:else>
+			<image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+			<text class="userinfo-nickname">{{userInfo.nickName}}</text>
+		</block>
+	</view>
+</view>
+
+
+<view class="settigs">
+
+	<view class="middle edit">
+		<view class='icon a'></view>
+		<text>编辑资料</text>
+		<view class='icon e'></view>
+	</view>
+	<view class="middle rollC">
+		<view class='icon b'></view>
+		<text>我的班级</text>
+		<view class='icon e'></view>
+	</view>
+	<view class="middle address">
+		<view class='icon c'></view>
+		<text>我的作业</text>
+		<view class='icon e'></view>
+	</view>
+	<view class="middle rollC">
+		<view class='icon d'></view>
+		<text>我的考勤</text>
+		<view class='icon e'></view>
+	</view>
+
+</view>
