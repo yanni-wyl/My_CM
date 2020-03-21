@@ -10,7 +10,7 @@
 		<navigator url="/pages/signIn/signIn">签到</navigator>
 	</view>
 	<view class='btn btn-leave'>
-		<navigator url="/pages/rollCall/rollCall">请假</navigator>
+		<navigator url="/pages/leave/leave">请假</navigator>
 	</view>
 	<view class='btn btn-record'>
 		<navigator url="/pages/rollCall/rollCall">记录</navigator>

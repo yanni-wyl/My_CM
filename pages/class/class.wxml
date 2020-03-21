@@ -1,0 +1,33 @@
+<!--pages/homeWork/homeWork.wxml-->
+<view class="main-container">
+		<view class="top-icon">
+			<view class="icon notice"></view>
+			<text class="text">公告</text>
+		</view>
+		<view class="bottom-container">
+			<view class="medium-text">公告1</view>
+		</view>
+
+	<view class="top-icon">
+		<view class="icon message"></view>
+		<text class="text">留言板</text>
+	</view>
+	<view class="medium-container">
+		<view class="medium-text">留言条</view>
+	</view>
+
+	<view class="top-icon">
+		<view class='icon addMessage'></view>
+		<text class="text">留言</text>
+	</view>
+	<view class="top-container">
+		<view class="top-text">
+			<textarea placeholder="说点儿什么吧..."></textarea>
+		</view>
+			<view class="top-btn">确定</view>
+	</view>
+
+</view>
+
+
+<!-- 留言板url:https://i.loli.net/2020/02/29/SfegyBCFuZLsoNv.png -->

@@ -1,0 +1,15 @@
+<!--pages/leave/leave.wxml-->
+<view class="main-container">
+	<view class="top-container">
+		<text class="leave-page">请假条</text>
+		<textarea class="leave-reason" placeholder="请输入理由"></textarea>
+		<view class="leave-stu">
+			<input class="stu-name"></input>
+			<text class="stu">申请人：</text>
+		</view>
+		<view class="leave-date">
+
+		</view>
+		<view class="top-button">确定</view>
+	</view>
+</view>

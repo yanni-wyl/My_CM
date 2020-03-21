@@ -1,0 +1,80 @@
+<!--pages/editMaterials/editMaterials.wxml-->
+<view class="main-container">
+		<view wx:if="{{!success}}">
+
+			<view class='row'>
+				<label class="title">角色</label>
+				<view class='info'>
+					<radio-group bindchange="handleSelectID">
+						<label class="radio-group">
+							<radio value="teacher" checked="{{true}}" />教师
+							<radio value="student" checked="{{false}}" />学生
+						</label>
+					</radio-group>
+				</view>
+			</view>
+
+			<view class='row'>
+				<label class="title">在校</label>
+				<view class='info'>
+					<radio-group bindchange="handleInSchool">
+						<label>
+							<radio value="yes" checked="{{true}}" /><text decode="{{true}}">是&emsp;</text>
+							<radio value="no" checked="{{false}}" /><text decode="{{true}}">否&emsp;</text>
+						</label>
+					</radio-group>
+				</view>
+			</view>
+
+			<view class='row'>
+				<label class="title">职务</label>
+				<view class='info'>
+          <radio-group bindchange="handlePosition">
+						<label>
+							<radio value="monitor" checked="{{true}}" />班长
+							<radio value="other" checked="{{false}}" />其他班干部
+							<radio value="nothing" checked="{{false}}" />无
+						</label>
+					</radio-group>
+				</view>
+			</view>
+
+			<view class='row'>
+				<label class="title">姓名</label>
+				<view class='info' bindtap='handleInputName'>
+					<input placeholder="请填写您的名字" class="input-info" bindinput='handleInputName' /></view>
+			</view>
+
+			<view class='row'>
+				<label class="title">联系方式</label>
+				<view class='info'>
+					<input placeholder="填写您的联系方式" class="input-info" bindinput='handleInputContact' />
+				</view>
+			</view>
+
+			<view class='row'>
+				<label class="title">居住地址</label>
+				<view class='info'>
+					<input placeholder="填写您的居住地址" class="input-info" bindinput='handleInputNowAddress' />
+				</view>
+			</view>
+
+			<view class='row'>
+				<label class="title">户籍地址</label>
+				<view class='info'>
+					<input placeholder="填写您的户籍地址" class="input-info" bindinput='handleInputInitialAddress' />
+				</view>
+			</view>
+			<view class='save-btn' bindtap='saveInfo'>保存</view>
+		</view>
+
+		<view wx:if="{{success}}" class='success'>
+			<view class='congratulation'>
+				<icon type="success" size="20" class='icon-success' />保存成功！</view>
+			<view>
+				<button type="default" size="default" class='back-home' bindtap='backHome'>返回首页</button>
+			</view>
+		</view>
+
+
+</view>

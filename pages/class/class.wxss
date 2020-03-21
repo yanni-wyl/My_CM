@@ -1,0 +1,80 @@
+/* pages/homeWork/homeWork.wxss */
+page {
+  height: 100%;
+  width: 100%
+}
+
+.main-container {
+  height: 100%;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-top: 1%;
+}
+
+.bottom-container{
+  height: 25%;
+  border: 5rpx solid #13227a;
+}
+
+.medium-container{
+  height: 25%;
+  margin-top: 1%;
+  border: 5rpx solid #13227a;
+}
+.medium-text{
+  font-size: 30rpx;
+  margin-bottom: 3%;
+  margin-left: 8%;
+}
+
+.top-container {
+  border: 5rpx solid #13227a;
+  height: 25%;
+  margin-top: 1%;
+}
+
+.top-icon {
+  width: 25%;
+  display: flex;
+  font-size: 30rpx;
+  margin-top: 2%;
+  margin-bottom: 1%;
+  margin-left: 2%;
+}
+
+.icon {
+  margin-top: 3%;
+  width: 34rpx;
+  height: 34rpx;
+  background-size: 34rpx 34rpx;
+}
+.notice{
+  background-image: url(https://i.loli.net/2020/03/20/KrtV3FI8jOWbdTU.png);
+}
+.addMessage {
+  background-image: url(https://i.loli.net/2020/03/20/i67rRYlnG85fPJp.png);
+}
+
+.message {
+  background-image: url(https://i.loli.net/2020/03/20/1hc6JfKCV7NRTyg.png);
+}
+
+.top-text {
+  height: 70%;
+  margin-top: 3%;
+  margin-left: 5%;
+  margin-right: 5%;
+  font-size: 28rpx;
+}
+
+.top-btn {
+  margin-top: 2%;
+  width: 18%;
+  height: 14%;
+  font-size: 28rpx;
+  color: #13227a;
+  display: flex;
+  justify-content: center;
+  /* border: 2rpx solid black; */
+  margin-left: 80%;
+}

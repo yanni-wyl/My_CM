@@ -1,12 +1,16 @@
 {
   "pages": [
     "pages/index/index",
-    "pages/homeWork/homeWork",
+    "pages/class/class",
     "pages/personalCenter/personalCenter",
     "pages/rC_success/rC_success",
     "pages/signIn/signIn",
     "pages/rollCall/rollCall",
-    "pages/message/message"
+    "pages/message/message",
+    "pages/myClass/myClass",
+    "pages/myAttendence/myAttendence",
+    "pages/editMaterials/editMaterials",
+    "pages/leave/leave"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -23,23 +27,23 @@
         "selectedIconPath": "pages/images/rollCall_S.png"
       },
       {
-        "pagePath": "pages/homeWork/homeWork",
-        "text": "作业",
+        "pagePath": "pages/class/class",
+        "text": "班级",
         "iconPath": "pages/images/homeWork.png",
         "selectedIconPath": "pages/images/homeWork_S.png"
-      },{
-          "pagePath": "pages/message/message",
-          "text": "消息",
-          "iconPath": "pages/images/message.png",
-          "selectedIconPath": "pages/images/message_S.png"
-
+      },
+      {
+        "pagePath": "pages/message/message",
+        "text": "消息",
+        "iconPath": "pages/images/message.png",
+        "selectedIconPath": "pages/images/message_S.png"
       },
       {
         "pagePath": "pages/personalCenter/personalCenter",
         "text": "个人中心",
         "iconPath": "pages/images/personal.png",
         "selectedIconPath": "pages/images/personal_S.png"
-        }
+      }
     ],
     "color": "black",
     "selectedColor": "#13227a",

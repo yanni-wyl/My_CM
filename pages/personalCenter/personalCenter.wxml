@@ -11,26 +11,36 @@
 
 
 <view class="settigs">
+	<navigator url="/pages/editMaterials/editMaterials">
+		<view class="middle edit">
+			<view class='icon a'></view>
+			<text>编辑资料</text>
+			<view class='icon e'></view>
+		</view>
+	</navigator>
 
-	<view class="middle edit">
-		<view class='icon a'></view>
-		<text>编辑资料</text>
-		<view class='icon e'></view>
-	</view>
-	<view class="middle rollC">
-		<view class='icon b'></view>
-		<text>我的班级</text>
-		<view class='icon e'></view>
-	</view>
-	<view class="middle address">
-		<view class='icon c'></view>
-		<text>我的作业</text>
-		<view class='icon e'></view>
-	</view>
-	<view class="middle rollC">
-		<view class='icon d'></view>
-		<text>我的考勤</text>
-		<view class='icon e'></view>
-	</view>
+	<!-- <navigator url="/pages/myClass/myClass">
+		<view class="middle rollC">
+			<view class='icon b'></view>
+			<text>我的班级</text>
+			<view class='icon e'></view>
+		</view>
+	</navigator> -->
+
+	<navigator url="/pages/myClass/myClass">
+		<view class="middle address">
+			<view class='icon c'></view>
+			<text>我的作业</text>
+			<view class='icon e'></view>
+		</view>
+	</navigator>
+
+	<navigator url="/pages/myAttendence/myAttendence">
+		<view class="middle rollC">
+			<view class='icon d'></view>
+			<text>我的考勤</text>
+			<view class='icon e'></view>
+		</view>
+	</navigator>
 
 </view>

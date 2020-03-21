@@ -52,9 +52,9 @@
 					"scene": null
 				},
 				{
-					"id": -1,
-					"name": "homeWork——作业",
-					"pathName": "pages/homeWork/homeWork",
+					"id": 1,
+					"name": "pages/class/class",
+					"pathName": "pages/class/class",
 					"query": "",
 					"scene": null
 				},
@@ -83,6 +83,42 @@
 					"id": -1,
 					"name": "pages/index/index",
 					"pathName": "pages/index/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/myClass/myClass",
+					"pathName": "pages/myClass/myClass",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/editMaterials/editMaterials",
+					"pathName": "pages/editMaterials/editMaterials",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/myAttendence/myAttendence",
+					"pathName": "pages/myAttendence/myAttendence",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/rollCall/rollCall",
+					"pathName": "pages/rollCall/rollCall",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 10,
+					"name": "pages/leave/leave",
+					"pathName": "pages/leave/leave",
+					"query": "",
 					"scene": null
 				}
 			]

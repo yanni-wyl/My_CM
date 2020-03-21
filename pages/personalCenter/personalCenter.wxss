@@ -31,22 +31,20 @@ page {
 }
 
 .middle {
+  display: flex;
   border-bottom: 1px solid #ddd;
   font-size: 32rpx;
   padding-left: 10%;
   padding-bottom: 2%;
   padding-top: 2%;
-}
-
-.edit {
-  line-height: -50rpx;
+  line-height: 60rpx;
 }
 
 .icon {
   width: 36rpx;
   height: 36rpx;
   background-size: 36rpx 36rpx;
-  margin-top: 18rpx;
+  margin-top: 10rpx;
   /* margin-left: 22rpx; */
   margin-right: 24rpx;
   display: inline-block;
@@ -69,6 +67,7 @@ page {
 }
 
 .e {
+  
   margin-left: 60%;
   background-image: url(https://i.loli.net/2020/02/21/ZcifSm4EYQT9J8F.png);
 
