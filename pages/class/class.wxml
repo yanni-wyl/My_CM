@@ -1,19 +1,38 @@
 <!--pages/homeWork/homeWork.wxml-->
 <view class="main-container">
-		<view class="top-icon">
-			<view class="icon notice"></view>
-			<text class="text">公告</text>
-		</view>
-		<view class="bottom-container">
-			<view class="medium-text">公告1</view>
-		</view>
+	<view class="top-icon">
+		<view class="icon notice"></view>
+		<text class="text">公告</text>
+	</view>
+	<view class="bottom-container">
+		<navigator url="/pages/editMaterials/editMaterials">
+			<view class="medium-text">《关于开学延期通知》</view>
+		</navigator>
+		<navigator url="/pages/editMaterials/editMaterials">
+			<view class="medium-text">《网上主题班会召开》</view>
+		</navigator>
+		<navigator url="/pages/editMaterials/editMaterials">
+			<view class="medium-text">《毕业设计进展汇报》</view>
+		</navigator>
+		<navigator url="/pages/editMaterials/editMaterials">
+			<view class="medium-text">《返校问题》</view>
+		</navigator>
+	</view>
 
 	<view class="top-icon">
 		<view class="icon message"></view>
 		<text class="text">留言板</text>
 	</view>
 	<view class="medium-container">
-		<view class="medium-text">留言条</view>
+		<navigator url="/pages/editMaterials/editMaterials">
+		<view class="medium-text">** 什么时候能开学？</view>
+		</navigator>
+		<navigator url="/pages/editMaterials/editMaterials">
+		<view class="medium-text">** 什么时候可以回学校？</view>
+		</navigator>
+		<navigator url="/pages/editMaterials/editMaterials">
+		<view class="medium-text">** 想回学校了。。。</view>
+		</navigator>
 	</view>
 
 	<view class="top-icon">
@@ -24,7 +43,7 @@
 		<view class="top-text">
 			<textarea placeholder="说点儿什么吧..."></textarea>
 		</view>
-			<view class="top-btn">确定</view>
+		<view class="top-btn">确定</view>
 	</view>
 
 </view>

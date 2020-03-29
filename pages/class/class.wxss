@@ -12,6 +12,8 @@ page {
 }
 
 .bottom-container{
+  margin-left: 5%;
+  margin-right: 5%;
   height: 25%;
   border: 5rpx solid #13227a;
 }
@@ -19,18 +21,22 @@ page {
 .medium-container{
   height: 25%;
   margin-top: 1%;
+  margin-left: 5%;
+  margin-right: 5%;
   border: 5rpx solid #13227a;
 }
 .medium-text{
   font-size: 30rpx;
-  margin-bottom: 3%;
-  margin-left: 8%;
+  margin: 1%;
+  border-bottom: 1rpx solid grey;
 }
 
 .top-container {
   border: 5rpx solid #13227a;
   height: 25%;
+  margin-left: 5%;
   margin-top: 1%;
+  margin-right: 5%;
 }
 
 .top-icon {

@@ -5,9 +5,15 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    selectedProduceDate: '2020-03-23',
+    startProduceDate: '2020-01-01',
+    endProduceDate: '2020-12-31'
   },
-
+  dateChange: function (e) {
+    this.setData({
+      selectedProduceDate:e.detail.value
+    })
+  },
   /**
    * 生命周期函数--监听页面加载
    */

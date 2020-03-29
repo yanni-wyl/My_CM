@@ -66,9 +66,10 @@ page {
   background-image: url(https://i.loli.net/2020/02/21/tHeB3fbG6vhdxYW.png);
 }
 
-.e {
-  
+.e{
+  background-image: url(https://i.loli.net/2020/03/29/uVr3WgqzMX6chb5.png);
+}
+.f {
   margin-left: 60%;
   background-image: url(https://i.loli.net/2020/02/21/ZcifSm4EYQT9J8F.png);
-
 }
