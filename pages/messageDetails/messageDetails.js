@@ -1,4 +1,4 @@
-// pages/rC_success/rC_success.js
+// pages/messageDetails/messageDetails.js
 Page({
 
   /**
@@ -8,7 +8,6 @@ Page({
 
   },
 
- 
   /**
    * 生命周期函数--监听页面加载
    */

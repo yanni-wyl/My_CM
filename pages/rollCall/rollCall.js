@@ -8,6 +8,17 @@ Page({
 
   },
 
+  beginRollCall:function(e){
+    this.setData({
+      success:true
+    })
+  },
+  backHome(e){
+    //页面返回API
+    wx.navigateTo({
+      url: '../rollCall/rollCall?id=1',
+    })
+  },
   /**
    * 生命周期函数--监听页面加载
    */

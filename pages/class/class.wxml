@@ -24,13 +24,13 @@
 	</view>
 	<view class="medium-container">
 		<navigator url="/pages/editMaterials/editMaterials">
-		<view class="medium-text">** 什么时候能开学？</view>
+			<view class="medium-text">** 什么时候能开学？</view>
 		</navigator>
 		<navigator url="/pages/editMaterials/editMaterials">
-		<view class="medium-text">** 什么时候可以回学校？</view>
+			<view class="medium-text">** 什么时候可以回学校？</view>
 		</navigator>
 		<navigator url="/pages/editMaterials/editMaterials">
-		<view class="medium-text">** 想回学校了。。。</view>
+			<view class="medium-text">** 想回学校了。。。</view>
 		</navigator>
 	</view>
 
@@ -39,13 +39,29 @@
 		<text class="text">留言</text>
 	</view>
 	<view class="top-container">
+		<!-- <form bindsubmit="submitMessage"> -->
 		<view class="top-text">
 			<textarea bindinput="messageInput" placeholder="说点儿什么吧..."></textarea>
 		</view>
-		<view class="top-btn" bindtap="saveMessage">确定</view>
+		<view>
+			<button class="top-btn" bindtap="submitMessage" form-type="submit">提交</button>
+		</view>
+		
+		<view wx:if="{{success}}" class='success'>
+		<view class='congratulation'>
+			<icon type="success" size="20" class='icon-success' />保存成功！</view>
+		<view>
+			<button type="default" size="default" class='back-home' bindtap='backHome'>返回首页</button>
+		</view>
+	</view>
+		<!-- </form> -->
+
+		<!-- <view class="top-btn" bindtap="saveMessage">确定</view> -->
 	</view>
 
+
 </view>
+	
 
 
 <!-- 留言板url:https://i.loli.net/2020/02/29/SfegyBCFuZLsoNv.png -->

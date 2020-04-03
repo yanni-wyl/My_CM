@@ -13,7 +13,8 @@
     "pages/leave/leave",
     "pages/chat/chat",
     "pages/record/record",
-    "pages/myMessage/myMessage"
+    "pages/myMessage/myMessage",
+    "pages/messageDetails/messageDetails"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -21,6 +22,7 @@
     "navigationBarTitleText": "WeChat",
     "navigationBarTextStyle": "white"
   },
+  "cloud": true,
   "tabBar": {
     "list": [
       {

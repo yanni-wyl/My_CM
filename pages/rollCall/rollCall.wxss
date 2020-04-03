@@ -60,3 +60,21 @@ page {
   border-radius: 12rpx;
   text-align: center;  
 }
+.success{
+  margin-left: 20%;
+  background-color: #fff;
+  height: 200px;
+  text-align: center;
+}
+
+.congratulation{
+  line-height: 120px;
+}
+
+.icon-success{
+  margin-right: 10px;
+}
+
+.back-home{
+  margin: 0 40px;
+}

@@ -1,6 +1,6 @@
 <!--pages/leave/leave.wxml-->
 <view class="main-container">
-	<form bindsubmit="leaveForm">
+	<view wx:if="{{!success}}">
 		<view class="top-container">
 			<text class="leave-page">请假条</text>
 			<textarea class="leave-reason" placeholder="请输入理由" name="leavaReason"></textarea>
@@ -12,9 +12,16 @@
 				<picker mode="date" value="{{selectedProduceDate}}" start="{{startProduceDate}}" end="{{endProduceDate}}" field="day" bindchange="dateChange"></picker>
 				<view class="stu-date">申请日期：{{selectedProduceDate}}</view>
 			</view>
-			<view class="top-button">确定</view>
+			<view class="top-button" bindtap="confirm">确定</view>
 		</view>
-	</form>
+	</view>
+			<view wx:if="{{success}}" class='success'>
+			<view class='congratulation'>
+				<icon type="success" size="20" class='icon-success' />保存成功！</view>
+			<view>
+				<button type="default" size="default" class='back-home' bindtap='backHome'>返回</button>
+			</view>
+		</view>
 
 
 </view>

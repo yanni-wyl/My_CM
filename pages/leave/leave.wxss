@@ -47,3 +47,20 @@ page {
   margin-right: 200rpx;
   /* width: 30%; */
 }
+.success{
+  margin-left: 10%;
+  background-color: #fff;
+  height: 200px;
+  text-align: center;
+}
+
+.congratulation{
+  line-height: 120px;
+}
+
+.icon-success{
+  margin-right: 10px;
+}
+.back-home{
+  margin: 0 40px;
+}

@@ -1,24 +1,36 @@
 <view class="main-container">
-	<view class="row-container">
-		<view class='picture a'></view>
-		<text class="text-container">王明</text>
-		<checkbox class="check"></checkbox>
-		<view class='icon'></view>
-	</view>
+	<view wx:if="{{!success}}">
+		<view class="row-container">
+			<view class='picture a'></view>
+			<text class="text-container">王明</text>
+			<checkbox class="check"></checkbox>
+			<view class='icon'></view>
+		</view>
 
-	<view class="row-container">
-		<view class='picture b'></view>
-		<text class="text-container">韩梅梅</text>
-		<checkbox class="check"></checkbox>
-		<view class='icon'></view>
-	</view>
+		<view class="row-container">
+			<view class='picture b'></view>
+			<text class="text-container">韩梅梅</text>
+			<checkbox class="check"></checkbox>
+			<view class='icon'></view>
+		</view>
 
-	<view class="row-container">
-		<view class='picture c'></view>
-		<text class="text-container">张扬</text>
-		<checkbox class="check"></checkbox>
-		<view class='icon'></view>
-	</view>
+		<view class="row-container">
+			<view class='picture c'></view>
+			<text class="text-container">张扬</text>
+			<checkbox class="check"></checkbox>
+			<view class='icon'></view>
+		</view>
+
 
 		<view class='save-btn' bindtap='beginRollCall'>开始点名</view>
+	</view>
+
+	<view wx:if="{{success}}" class='success'>
+		<view class='congratulation'>
+			<icon type="success" size="20" class='icon-success' />点名结束！</view>
+		<view>
+			<button type="default" size="default" class='back-home' bindtap='backHome'>返回</button>
+		</view>
+	</view>
+
 </view>

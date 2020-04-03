@@ -12,6 +12,6 @@
 		<navigator url="/pages/leave/leave">请假</navigator>
 	</view>
 	<view class='btn btn-record'>
-		<navigator url="/pages/rollCall/rollCall">记录</navigator>
+		<navigator url="/pages/record/record">记录</navigator>
 	</view>
 </view>
