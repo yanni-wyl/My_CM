@@ -10,7 +10,10 @@
     "pages/myClass/myClass",
     "pages/myAttendence/myAttendence",
     "pages/editMaterials/editMaterials",
-    "pages/leave/leave"
+    "pages/leave/leave",
+    "pages/chat/chat",
+    "pages/record/record",
+    "pages/myMessage/myMessage"
   ],
   "window": {
     "backgroundTextStyle": "light",

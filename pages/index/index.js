@@ -1,4 +1,3 @@
-// pages/rollCall/rollCall.js
 var myApp = getApp();
 
 Page({
@@ -59,27 +58,27 @@ Page({
   onShow: function () {
     this.getLocation();
     this.mapCtx = wx.createMapContext('map')
-    this.showPublishInfo();
+    // this.showPublishInfo();
   },
 
-  showPublishInfo: function(){
-    //数组的迭代器方法map()  ，把数组里边的每一项对象都做处理，最后把返回值组合起来成为数组
-    var makers = myApp.globalInfo.map(
-      function(arrItem, index) {
-        return {
-          iconPath:"/images/"+arrItem.type+".png",
-          id: index,
-          latitude: arrItem.latitude,
-          longitude: arrItem.longitude,
-          width: 40,
-          height: 40
-        }
-      }
-    )
-    this.setData({
-      markers: makers
-    })
-  },
+  // showPublishInfo: function(){
+  //   //数组的迭代器方法map()  ，把数组里边的每一项对象都做处理，最后把返回值组合起来成为数组
+  //   var makers = myApp.globalInfo.map(
+  //     function(arrItem, index) {
+  //       return {
+  //         iconPath:"/images/"+arrItem.type+".png",
+  //         id: index,
+  //         latitude: arrItem.latitude,
+  //         longitude: arrItem.longitude,
+  //         width: 40,
+  //         height: 40
+  //       }
+  //     }
+  //   )
+  //   this.setData({
+  //     markers: makers
+  //   })
+  // },
 
   getLocation: function() {
     //获取当前位置API-->wx.getLocation
@@ -96,13 +95,13 @@ Page({
     })
   },
 
-  markertap:function(event){
-   //console.log(event)
-    //页面跳转API
-    wx.navigateTo({
-      url: "/pages/rollCall/rollCall?id="+event.markerId
-    })
-  },
+  // markertap:function(event){
+  //  //console.log(event)
+  //   //页面跳转API
+  //   wx.navigateTo({
+  //     url: "/pages/rollCall/rollCall?id="+event.markerId
+  //   })
+  // },
   
   /**
    * 生命周期函数--监听页面隐藏

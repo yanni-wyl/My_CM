@@ -1,2 +1,24 @@
-<!--pages/rollCall/rollCall.wxml-->
-<text>pages/rollCall/rollCall.wxml</text>
+<view class="main-container">
+	<view class="row-container">
+		<view class='picture a'></view>
+		<text class="text-container">王明</text>
+		<checkbox class="check"></checkbox>
+		<view class='icon'></view>
+	</view>
+
+	<view class="row-container">
+		<view class='picture b'></view>
+		<text class="text-container">韩梅梅</text>
+		<checkbox class="check"></checkbox>
+		<view class='icon'></view>
+	</view>
+
+	<view class="row-container">
+		<view class='picture c'></view>
+		<text class="text-container">张扬</text>
+		<checkbox class="check"></checkbox>
+		<view class='icon'></view>
+	</view>
+
+		<view class='save-btn' bindtap='beginRollCall'>开始点名</view>
+</view>

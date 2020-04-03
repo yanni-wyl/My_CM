@@ -1,0 +1,7 @@
+<view class="main-container">
+	<view class="row-container">
+		<view class="icon message"></view>
+		<text class="text">我的留言</text>
+		<view class="content">{{Message}}</view>
+	</view>
+</view>

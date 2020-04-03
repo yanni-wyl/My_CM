@@ -1,0 +1,11 @@
+<view class="main-container">
+	<view class="row-container">
+			<view class="icon attendence"></view>
+			<text class="text">我的考勤</text>
+      <view class="content">neirong</view>
+	</view>
+	<view class="row-container">
+			<view class="icon absence"></view>
+			<text class="text">我的缺席</text>
+	</view>
+</view>

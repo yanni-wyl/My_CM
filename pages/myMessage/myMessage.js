@@ -1,5 +1,4 @@
-// pages/homeWork/homeWork.js
-
+// pages/myMessage/myMessage.js
 Page({
 
   /**
@@ -8,27 +7,22 @@ Page({
   data: {
     Message:null
   },
-  messageInput:function(e){
-    this.setData({
-      Message:e.detail.value
-    })
-  },
-  saveMessage(event){
-    wx.navigateTo({
-      url: '../myMessage/myMessage?Message='+this.data.Message,
-    })
-  },
+
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
+    // console.log(options.Message);
+    // this.setData({
+    //   Message:options.Message
+    // })
   },
 
   /**
    * 生命周期函数--监听页面初次渲染完成
    */
   onReady: function () {
-  
+
   },
 
   /**

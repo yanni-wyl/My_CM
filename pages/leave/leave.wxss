@@ -44,6 +44,6 @@ page {
 .stu-date {
   display: flex;
   flex-direction: row-reverse;
-  margin-right: 8%;
+  margin-right: 200rpx;
   /* width: 30%; */
 }

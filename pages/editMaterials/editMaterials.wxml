@@ -26,18 +26,7 @@
 				</view>
 			</view>
 
-			<view class='row'>
-				<label class="title">职务</label>
-				<view class='info'>
-          <radio-group bindchange="handlePosition">
-						<label>
-							<radio value="monitor" checked="{{true}}" />班长
-							<radio value="other" checked="{{false}}" />其他班干部
-							<radio value="nothing" checked="{{false}}" />无
-						</label>
-					</radio-group>
-				</view>
-			</view>
+	
 
 			<view class='row'>
 				<label class="title">姓名</label>
@@ -59,12 +48,6 @@
 				</view>
 			</view>
 
-			<view class='row'>
-				<label class="title">户籍地址</label>
-				<view class='info'>
-					<input placeholder="填写您的户籍地址" class="input-info" bindinput='handleInputInitialAddress' />
-				</view>
-			</view>
 			<view class='save-btn' bindtap='saveInfo'>保存</view>
 		</view>
 

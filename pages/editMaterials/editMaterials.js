@@ -31,15 +31,6 @@ Page({
       console.log(this.materialsData.atSchool)
   },
 
-  handlePosition:function(event){
-    if(event.detail.value == "moniter"){
-      this.materialsData.atSchool = '班长'    
-    } else if(event.detail.value == "other"){
-      this.materialsData.atSchool = '其他班干部'    
-    }else{
-      this.materialsData.atSchool = '无'    
-    }
-  },
   
   handleInputName:function(event){
       this.materialsData.name = event.detail.value   
@@ -53,9 +44,7 @@ Page({
       this.materialsData.nowAddress = event.detail.value   
   },
   
-  handleInputInitialAddress:function(event){
-      this.materialsData.initialAddress = event.detail.value   
-  },
+  
 
   saveInfo: function() {
     if (this.materialsData.role == "点击选择，要勾选哦" || !this.materialsData.role) {

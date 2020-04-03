@@ -127,6 +127,33 @@
 					"pathName": "pages/message/message",
 					"query": "",
 					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/editMaterials/editMaterials",
+					"pathName": "pages/editMaterials/editMaterials",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/chat/chat",
+					"pathName": "pages/chat/chat",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/record/record",
+					"pathName": "pages/record/record",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/myMessage/myMessage",
+					"pathName": "pages/myMessage/myMessage",
+					"scene": null
 				}
 			]
 		}

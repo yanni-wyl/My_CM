@@ -1,0 +1,39 @@
+page{
+  height: 100%;
+  width: 100%;
+}
+.main-container{
+  width: 90%;
+  height: 90%;
+  margin: 5%;
+  background-color: blue;
+}
+.row-container{
+  display: flex;
+  flex-wrap: wrap;
+  border-bottom: 1px solid #ddd;
+  font-size: 32rpx;
+  padding-left: 5%;
+  padding-bottom: 2%;
+  padding-top: 2%;
+  line-height: 60rpx;
+}
+.icon {
+  margin-top: 2%;
+  width: 34rpx;
+  height: 34rpx;
+  margin-right: 3%;
+  background-size: 34rpx 34rpx;
+}
+.attendence{
+  background-image: url(https://i.loli.net/2020/02/21/tHeB3fbG6vhdxYW.png);
+}
+.absence{
+  background-image: url(https://i.loli.net/2020/02/21/nZLBRY85AaqytFe.png);
+}
+.content{
+  margin-left: 8%;  
+  width: 80%;
+  height: 40%;
+  background-color: green;
+}

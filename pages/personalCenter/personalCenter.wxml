@@ -35,7 +35,7 @@
 		</view>
 	</navigator>
 
-	<navigator url="/pages/myClass/myClass">
+	<navigator url="/pages/myMessage/myMessage">
 		<view class="middle rollC">
 			<view class='icon e'></view>
 			<text>我的留言</text>

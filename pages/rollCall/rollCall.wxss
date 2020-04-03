@@ -1,1 +1,62 @@
-/* pages/rollCall/rollCall.wxss */
+page {
+  height: 100%;
+  width: 100%
+}
+
+.main-container {
+  margin: 5%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.row-container {
+  width: 600rpx;
+  height: 140rpx;
+  display: flex;
+  font-size: 32rpx;
+  padding-left: 10%;
+  padding-top: 2%;
+  line-height: 170rpx;
+}
+
+.picture {
+  width: 120rpx;
+  height: 120rpx;
+  background-size: 120rpx 120rpx;
+  margin-top: 10rpx;
+  margin-right: 24rpx;
+  display: inline-block;
+}
+
+.text-container {
+  text-align: center;
+  width: 130rpx;
+}
+
+.check {
+  margin-left: 40%;
+}
+
+.a {
+  background-image: url(https://i.loli.net/2020/03/29/vadQWo8HInwZM6y.png);
+}
+
+.b {
+  background-image: url(https://i.loli.net/2020/03/29/Fsui2qk7cgKWTtZ.jpg);
+}
+
+.c {
+  background-image: url(https://i.loli.net/2020/03/29/jMKAx8aFBVQnyXg.jpg);
+}
+
+.save-btn{
+  width: 160rpx;
+  height: 80rpx;
+  background-color: #ecaf2c;
+  font-size: 30rpx;
+  color: #fff;
+  margin: 100rpx 240rpx 10rpx 250rpx;
+  line-height: 80rpx;
+  border-radius: 12rpx;
+  text-align: center;  
+}

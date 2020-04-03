@@ -5,7 +5,7 @@ Page({
    * 页面的初始数据
    */
   data: {
-    selectedProduceDate: '2020-03-23',
+    selectedProduceDate: '',
     startProduceDate: '2020-01-01',
     endProduceDate: '2020-12-31'
   },

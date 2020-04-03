@@ -1,42 +1,42 @@
 <!--pages/messages/messages.wxml-->
 <view class="main-container">
 	<view class="members">
-		<navigator url="/pages/editMaterials/editMaterials">
+		<navigator url="/pages/chat/chat">
 			<view class="member stu1"><text class="text">李明</text></view>
 		</navigator>
 	</view>
 	<view class="members">
-		<navigator url="/pages/editMaterials/editMaterials">
+		<navigator url="/pages/chat/chat">
 			<view class="member stu2"><text class="text">韩梅梅</text></view>
 		</navigator>
 	</view>
 	<view class="members">
-		<navigator url="/pages/editMaterials/editMaterials">
+		<navigator url="/pages/chat/chat">
 			<view class="member stu3"><text class="text">张扬</text></view>
 		</navigator>
 	</view>
 	<view class="members">
-		<navigator url="/pages/editMaterials/editMaterials">
+		<navigator url="/pages/chat/chat">
 			<view class="member stu4"><text class="text">周毓歆</text></view>
 		</navigator>
 	</view>
 	<view class="members">
-		<navigator url="/pages/editMaterials/editMaterials">
+		<navigator url="/pages/chat/chat">
 			<view class="member stu5"><text class="text">王韩</text></view>
 		</navigator>
 	</view>
 	<view class="members">
-		<navigator url="/pages/editMaterials/editMaterials">
+		<navigator url="/pages/chat/chat">
 			<view class="member stu5"><text class="text">王韩</text></view>
 		</navigator>
 	</view>
 	<view class="members">
-		<navigator url="/pages/editMaterials/editMaterials">
+		<navigator url="/pages/chat/chat">
 			<view class="member stu5"><text class="text">王韩</text></view>
 		</navigator>
 	</view>
 	<view class="members">
-		<navigator url="/pages/editMaterials/editMaterials">
+		<navigator url="/pages/chat/chat">
 			<view class="member stu5"><text class="text">王韩</text></view>
 		</navigator>
 	</view>

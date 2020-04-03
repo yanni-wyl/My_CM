@@ -1,6 +1,5 @@
-<!--pages/rollCall/rollCall.wxml-->
 <view class='map-container'>
-	<map class='map' id="map" longitude="{{longitude}}" latitude="{{latitude}}" scale="14" show-location='{{true}}' controls='{{controls}}' bindcontroltap="controltap" markers="{{markers}}" bindmarkertap='markertap'></map>
+	<map class='map' id="map" longitude="{{longitude}}" latitude="{{latitude}}" scale="14" show-location='{{true}}' controls='{{controls}}' bindcontroltap="controltap" markers="{{markers}}"></map>
 </view>
 <view class="btns">
 	<view class='btn btn-rollCall'>
