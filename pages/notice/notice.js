@@ -1,41 +1,12 @@
-
 Page({
+
   /**
    * 页面的初始数据
    */
   data: {
-    line: '',
-    content: '',
-    focusInput: false,
-    isInput: false
-  },
-  commentBtn: function () {
-    this.setData({
-      focusInput: true,
-      isInput: true,
-    })
-  },
-
-  inputFocus(e) {
-    console.log(e, '键盘弹起')
-    this.setData({
-      isInput: true
-    })
-  },
-  inputBlur() {
-    console.log('键盘收起')
-    this.setData({
-      isInput: false
-    })
-  },
-  comfirmStatus: function (e) {
-    console.log(e)
-    wx.showToast({
-      title: '评论成功！',
-    })
-    this.setData({
-      isInput: false
-    })
+    line:'',
+    content:'',
+    date:''
   },
 
   /**
@@ -43,11 +14,11 @@ Page({
    */
   onLoad: function (options) {
     let items = JSON.parse(options.jsonStr)
-    var messages = items.split(';')
-    var replies = messages[1].split(',')
+    var notices = items.split(',')
     this.setData({
-      line: messages[0],
-      content: replies
+      line:notices[0],
+      content:notices[1],
+      date:notices[2]
     })
   },
 

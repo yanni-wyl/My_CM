@@ -1,0 +1,31 @@
+page {
+  height: 100%;
+  width: 100%
+}
+
+.main-container {
+  height: 100%;
+  width: 90%;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-top: 1%;
+}
+
+.top-line{
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 5% 10% 5% 10%;
+  font-size: large;
+}
+.top-content{
+  margin-top: 10%;
+  text-indent: 10%;
+  font-size: small;
+  font-family: '仿宋';
+}
+.top-date{
+  margin-left: 60%;
+  margin-top: 10%;
+}

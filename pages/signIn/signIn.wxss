@@ -8,3 +8,8 @@
 .canvas-box{
   border: 1px solid red;
 } */
+.result{
+  margin-left: 300rpx;
+  margin-top: 300rpx;
+  font-size: 40rpx;
+}

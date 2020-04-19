@@ -21,8 +21,8 @@ Page({
   },
   backHome(e){
     //页面返回API
-    wx.navigateTo({
-      url: '../leave/leave?id=1',
+    wx.navigateBack({
+      delta:2
     })
   },
   /**

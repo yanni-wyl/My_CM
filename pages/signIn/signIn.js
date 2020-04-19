@@ -11,6 +11,8 @@ Page({
 * 页面的初始数据
 */
 data: {
+  result:'',
+  initUrl:'initUrl',
   canvasHidden: false, //默认不让canvas二维码隐藏，否则不能生成二维码
   imagePath: "" //弹出框二维码显示图片地址
 },
@@ -21,11 +23,24 @@ data: {
 onLoad: function(options) {
   var id = options
   var that = this;
-  var initUrl = 'https://www.baidu.com?id='+id;
+  var initUrl = '签到成功!';
   //创建二维码
   that.createQrCode(initUrl, "mycanvas", 170, 170);
 },
 
+
+getScancode: function () {
+  var _this = this;  
+  wx.scanCode({
+    success: (res) => {
+      var result = res.result;
+      _this.setData({
+        result: result,
+        initUrl:''
+      })
+    }
+  })
+},
 /**
 * 绘制二维码图片
 */

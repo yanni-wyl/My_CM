@@ -27,7 +27,7 @@
 		</view>
 	</navigator>
 
-	<navigator url="/pages/myAttendence/myAttendence">
+	<navigator url="/pages/record/record">
 		<view class="middle rollC">
 			<view class='icon d'></view>
 			<text>我的考勤</text>

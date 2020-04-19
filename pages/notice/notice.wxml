@@ -1,0 +1,7 @@
+<view class="main-container">
+	<view class="top-container">
+  <text class="top-line">{{line}}</text>
+  <view class="top-content">{{content}}</view>
+  <view class="top-date">{{date}}</view>
+	</view>
+</view>

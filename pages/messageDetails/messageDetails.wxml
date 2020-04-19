@@ -1,2 +1,26 @@
-<!--pages/messageDetails/messageDetails.wxml-->
-<text>pages/messageDetails/messageDetails.wxml</text>
+<view class="main-container">
+	<view class="top-container">
+
+		<view class="top-icon">
+			<view class="icon message"></view>
+			<text class="top-line">{{line}}</text>
+		</view>
+
+		<view class="medium-icon">
+			<view class="icon reply"></view>
+			<view class="text" bindtap="commentBtn">评论</view>
+		</view>
+
+		<view class="commentInputView" hidden="{{!isInput}}">
+			<view class="text-status">
+				<textarea placeholder="请输入…" focus="{{focusInput}}" bindfocus="inputFocus" bindblur="inputBlur"></textarea>
+			</view>
+			<button class="send" bindtap="comfirmStatus">确定</button>
+		</view>
+
+
+
+		<view wx:for="{{content}}" wx:key="index" class="top-content">{{index+1}}楼：{{item}}</view>
+
+	</view>
+</view>

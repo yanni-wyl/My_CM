@@ -29,7 +29,7 @@
 		<view class='congratulation'>
 			<icon type="success" size="20" class='icon-success' />点名结束！</view>
 		<view>
-			<button type="default" size="default" class='back-home' bindtap='backHome'>返回</button>
+			<button type="default" size="default" class='back-home' bindtap='backHome'>返回首页</button>
 		</view>
 	</view>
 

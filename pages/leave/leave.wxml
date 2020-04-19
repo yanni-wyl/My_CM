@@ -2,7 +2,7 @@
 <view class="main-container">
 	<view wx:if="{{!success}}">
 		<view class="top-container">
-			<text class="leave-page">请假条</text>
+			<text class="leave-page">请假申请</text>
 			<textarea class="leave-reason" placeholder="请输入理由" name="leavaReason"></textarea>
 			<view class="leave-stu">
 				<input class="stu-name" name="stuName"></input>
@@ -14,12 +14,13 @@
 			</view>
 			<view class="top-button" bindtap="confirm">确定</view>
 		</view>
+		
 	</view>
 			<view wx:if="{{success}}" class='success'>
 			<view class='congratulation'>
-				<icon type="success" size="20" class='icon-success' />保存成功！</view>
+				<icon type="success" size="20" class='icon-success' />申请已提交！</view>
 			<view>
-				<button type="default" size="default" class='back-home' bindtap='backHome'>返回</button>
+				<button type="default" size="default" class='back-home' bindtap='backHome'>返回首页</button>
 			</view>
 		</view>
 

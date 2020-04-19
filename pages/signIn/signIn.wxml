@@ -1,13 +1,20 @@
 <view class="ewm">
+
+	<view>
+		<button bindtap='getScancode'>扫一扫</button>
+		<view wx:if="{{result !=''}}">
+			<view class="result">{{result}}</view>
+		</view>
+	</view>
+
+
 	<!-- 存放二维码的图片-->
-	<view class='container'>
+	<view wx:if="{{initUrl != ''}}" class='container'>
 		<view class="tips">
 			请扫描二维码签到
 		</view>
 		<image style='width:300rpx;height:300rpx;margin-top:30rpx;' src="{{imagePath}}"></image>
-		<view class="record">
-			记录
-		</view>
+	
 	</view>
 	<!-- 画布，用来画二维码，只用来占位，不用来显示-->
 	<view class="canvas-box">

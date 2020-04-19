@@ -6,12 +6,56 @@ Page({
    * 页面的初始数据
    */
   data: {
+    content: [{
+      notice: '《关于开学延期通知》',
+      noticeContent: '现通知：由于突发疫情，开学时间推迟，具体开学时间等候通知，不可私自提前返校。',
+      date: '2020-2-20'
+    },
+    {
+      notice: '《网上主题班会召开》',
+      noticeContent: '拟通知：近期将展开网上主题班会，班干部组织准备，具体时间稍后通知。',
+      date: '2020-3-9'
+    }, {
+      notice: '《毕业设计进展汇报》',
+      noticeContent: '请各毕业生向各自导师汇报近期毕业设计开展情况',
+      date: '2020-4-6'
+    }, {
+      notice: '《返校问题》',
+      noticeContent: '再次强调，各位同学特殊时期做好安全防护，不得擅自返校！',
+      date: '2020-4-15'
+    }],
+    messageContent: [{
+      line: '什么时候能开学？',
+      lineReply: ['不知道呀', '同问']
+    }, {
+      line: '什么时候可以回学校？',
+      lineReply: []
+    }],
     Message: [
       {
         'time': '',
         'content': ''
       }
     ]
+  },
+  noticeFX: function (e) {
+    var noticeName = e.target.dataset.textnotice;
+    var notices = e.target.dataset.textcontent
+    var time = e.target.dataset.textdate
+    let str = JSON.stringify(noticeName + ',' + notices + ',' + time)
+    wx.navigateTo({
+      url: '../notice/notice?jsonStr=' + str,
+    })
+  },
+  messageFX: function (e) {
+    console.log(e)
+    var replies = e.target.dataset.textcontent;
+    var messages = e.target.dataset.textmessage
+    let strs = JSON.stringify(messages + ';' + replies)
+    console.log(replies)
+    wx.navigateTo({
+      url: '../messageDetails/messageDetails?jsonStr=' + strs,
+    })
   },
   messageInput: function (e) {
     //获取当前时间戳  
@@ -39,88 +83,35 @@ Page({
     this.setData({
       Message: array
     })
-    // const db = wx.cloud.database()
-    // db.collection('Message').add({
-    //   data:{
-    //     Message:array
-    //   }
-    // })
-
   },
 
-  //添加
+  //添加留言
   submitMessage: function (e) {
-    console.log(e)
-    // 创建数据库实例
-    // const db = wx.cloud.database()
-    // // 2. 构造查询语句
-    // // collection 方法获取一个集合的引用
-    // // 可以使用where 方法传入一个对象，数据库返回集合中字段等于指定值的 JSON 文档。API 也支持高级的查询条件（比如大于、小于、in 等）
-    // // get 方法会触发网络请求，往数据库取数据
-    // db.collection('Message').get({
-    //   success(res) {
-    //     console.log(res)
-    //   }
-    // })
-
-    const db = wx.cloud.database()
-    db.collection('Message').add({
-      data: {
-        Message: array
-      },
-      success: res => {
-        // 在返回结果中会包含新创建的记录的 _id
-        this.setData({
-          success:true,
-          username: e.detail.value.username
-        })
-        wx.showToast({
-          title: '新增记录成功',
-        })
-        console.log('[数据库] [新增记录] 成功，记录 _id: ', res._id)
-      },
-      fail: err => {
-        wx.showToast({
-          icon: 'none',
-          title: '新增记录失败'
-        })
-        console.error('[数据库] [新增记录] 失败：', err)
-      }
+    this.setData({
+      success: true
+    })
+  },
+  backHome(e) {
+    //页面返回API
+    wx.navigateBack({
+      delta: 2
+    })
+    this.setData({
+      success: false
     })
   },
 
-  saveMessage: function (event) {
-
-    wx.navigateTo({
-      url: '../myMessage/myMessage?Message=' + this.data.Message,
-    })
-  },
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    wx.cloud.init({
-      env: 'eric-demo',
-      traceUser: true
-    });
-    const db = wx.cloud.database()
-    // 2. 构造查询语句
-    // collection 方法获取一个集合的引用
-    // 可以使用where 方法传入一个对象，数据库返回集合中字段等于指定值的 JSON 文档。API 也支持高级的查询条件（比如大于、小于、in 等）
-    // get 方法会触发网络请求，往数据库取数据
-    db.collection('Message').get({
-      success(res) {
-        console.log(res)
-      }
-    })
-  
+
   },
 
   /**
    * 生命周期函数--监听页面初次渲染完成
    */
   onReady: function () {
-
   },
 
   /**

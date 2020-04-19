@@ -34,9 +34,7 @@ page {
 .top-container {
   border: 5rpx solid #13227a;
   height: 25%;
-  margin-left: 5%;
-  margin-top: 1%;
-  margin-right: 5%;
+  margin: 1% 5% 0 5%;
 }
 
 .top-icon {
@@ -74,7 +72,7 @@ page {
 }
 
 .top-btn {
-  margin-top: 12%;
+  margin-top: 16%;
   width: 20%;
   height: 8%;
   font-size: 28rpx;
@@ -84,6 +82,13 @@ page {
   /* border: 2rpx solid black; */
   margin-left: 80%;
 }
+.success{
+  margin-left: 10%;
+  background-color: #fff;
+  height: 200px;
+  text-align: center;
+}
+
 .congratulation{
   line-height: 100px;
 }

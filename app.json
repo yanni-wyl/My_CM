@@ -8,13 +8,13 @@
     "pages/rollCall/rollCall",
     "pages/message/message",
     "pages/myClass/myClass",
-    "pages/myAttendence/myAttendence",
     "pages/editMaterials/editMaterials",
     "pages/leave/leave",
     "pages/chat/chat",
     "pages/record/record",
     "pages/myMessage/myMessage",
-    "pages/messageDetails/messageDetails"
+    "pages/messageDetails/messageDetails",
+    "pages/notice/notice"
   ],
   "window": {
     "backgroundTextStyle": "light",

@@ -1,67 +1,49 @@
 <view class="main-container">
-	<view class="top-icon">
-		<view class="icon notice"></view>
-		<text class="text">公告</text>
-	</view>
-	<view class="bottom-container">
-		<navigator url="/pages/editMaterials/editMaterials">
-			<view class="medium-text">《关于开学延期通知》</view>
-		</navigator>
-		<navigator url="/pages/editMaterials/editMaterials">
-			<view class="medium-text">《网上主题班会召开》</view>
-		</navigator>
-		<navigator url="/pages/editMaterials/editMaterials">
-			<view class="medium-text">《毕业设计进展汇报》</view>
-		</navigator>
-		<navigator url="/pages/editMaterials/editMaterials">
-			<view class="medium-text">《返校问题》</view>
-		</navigator>
+	<view wx:if="{{!success}}">
+		<view class="top-icon">
+			<view class="icon notice"></view>
+			<text class="text">公告</text>
+		</view>
+
+		<view class="bottom-container">
+			<view  wx:for="{{content}}" wx:key="notice" data-textnotice="{{item.notice}}" data-textcontent="{{item.noticeContent}}" data-textdate="{{item.date}}" class="medium-text" bindtap="noticeFX">{{item.notice}}</view>
+		</view>
+
+		<view class="top-icon">
+			<view class="icon message"></view>
+			<text class="text">留言板</text>
+		</view>
+
+		<view class="medium-container">
+			<view  wx:for="{{messageContent}}" wx:key="line" data-textmessage="{{item.line}}" data-textcontent="{{item.lineReply}}" class="medium-text" bindtap="messageFX">** {{item.line}}</view>
+		</view>
+
+		<view class="top-icon">
+			<view class='icon addMessage'></view>
+			<text class="text">留言</text>
+		</view>
+
+		<view class="top-container">
+			<view class="top-text">
+				<textarea bindinput="messageInput" placeholder="说点儿什么吧..."></textarea>
+			</view>
+			<view>
+				<button class="top-btn" bindtap="submitMessage">提交</button>
+			</view>
+		</view>
 	</view>
 
-	<view class="top-icon">
-		<view class="icon message"></view>
-		<text class="text">留言板</text>
-	</view>
-	<view class="medium-container">
-		<navigator url="/pages/editMaterials/editMaterials">
-			<view class="medium-text">** 什么时候能开学？</view>
-		</navigator>
-		<navigator url="/pages/editMaterials/editMaterials">
-			<view class="medium-text">** 什么时候可以回学校？</view>
-		</navigator>
-		<navigator url="/pages/editMaterials/editMaterials">
-			<view class="medium-text">** 想回学校了。。。</view>
-		</navigator>
-	</view>
-
-	<view class="top-icon">
-		<view class='icon addMessage'></view>
-		<text class="text">留言</text>
-	</view>
-	<view class="top-container">
-		<!-- <form bindsubmit="submitMessage"> -->
-		<view class="top-text">
-			<textarea bindinput="messageInput" placeholder="说点儿什么吧..."></textarea>
-		</view>
-		<view>
-			<button class="top-btn" bindtap="submitMessage" form-type="submit">提交</button>
-		</view>
-		
-		<view wx:if="{{success}}" class='success'>
+	<view wx:if="{{success}}" class='success'>
 		<view class='congratulation'>
-			<icon type="success" size="20" class='icon-success' />保存成功！</view>
+			<icon type="success" size="20" class='icon-success' />留言成功！</view>
 		<view>
-			<button type="default" size="default" class='back-home' bindtap='backHome'>返回首页</button>
+			<button type="default" size="default" class='back-home' bindtap='backHome'>返回</button>
 		</view>
-	</view>
-		<!-- </form> -->
-
-		<!-- <view class="top-btn" bindtap="saveMessage">确定</view> -->
 	</view>
 
 
 </view>
-	
+
 
 
 <!-- 留言板url:https://i.loli.net/2020/02/29/SfegyBCFuZLsoNv.png -->

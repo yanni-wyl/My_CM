@@ -153,6 +153,20 @@
 					"id": -1,
 					"name": "pages/myMessage/myMessage",
 					"pathName": "pages/myMessage/myMessage",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/no",
+					"pathName": "pages/notice/notice",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/messageDetails/messageDetails",
+					"pathName": "pages/messageDetails/messageDetails",
 					"scene": null
 				}
 			]

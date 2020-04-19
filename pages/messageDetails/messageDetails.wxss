@@ -1,1 +1,59 @@
-/* pages/messageDetails/messageDetails.wxss */
+page {
+  height: 100%;
+  width: 100%
+}
+
+.main-container {
+  height: 100%;
+  width: 90%;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-top: 1%;
+}
+
+.top-icon {
+  display: flex;
+  font-size: large;
+  margin-top: 2%;
+  margin-bottom: 1%;
+  margin-left: 2%;
+  line-height: 100rpx;
+  border-bottom:5rpx solid gray ;
+}
+
+.icon {
+  margin-top: 3%;
+  width: 60rpx;
+  height: 60rpx;
+  background-size: 60rpx 60rpx;
+}
+.message {
+  background-image: url(https://i.loli.net/2020/04/17/mn14T85ac3uehbr.png);
+}
+
+.medium-icon{
+  display: flex;  
+  margin: 2% 0 2% 80%;
+}
+.reply {
+  width: 50rpx;
+  height: 50rpx;
+  background-size: 50rpx 50rpx;
+  background-image: url(https://i.loli.net/2020/04/17/bfScZxOJYp7Tham.png);
+}
+.text{
+  margin-left: 2%;
+  color: #13227a;
+  font-size: medium;
+}
+
+.text-status {
+  border: 1rpx solid #13227a;
+  margin: 1% 5% 1% 5%;
+}
+.top-content {
+  text-indent: 6%;
+  font-size: small;
+  font-family: '仿宋';
+  border-bottom: 1rpx dotted gray;
+}
