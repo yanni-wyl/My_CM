@@ -7,7 +7,8 @@ Page({
     line: '',
     content: '',
     focusInput: false,
-    isInput: false
+    isInput: false,
+    inputComment:''
   },
   commentBtn: function () {
     this.setData({
@@ -15,27 +16,32 @@ Page({
       isInput: true,
     })
   },
-
+  handleInput:function(e){
+    // console.log(e)
+      this.data.inputComment = e.detail.value
+  },
   inputFocus(e) {
-    console.log(e, '键盘弹起')
+    // console.log(e, '键盘弹起')
     this.setData({
       isInput: true
     })
   },
   inputBlur() {
-    console.log('键盘收起')
+    // console.log('键盘收起')
     this.setData({
       isInput: false
     })
   },
   comfirmStatus: function (e) {
-    console.log(e)
+    this.data.content.push(this.data.inputComment)
+    console.log(this.data.content)
     wx.showToast({
       title: '评论成功！',
     })
-    this.setData({
-      isInput: false
-    })
+    // this.setData({
+    //   isInput: false
+    // })
+
   },
 
   /**

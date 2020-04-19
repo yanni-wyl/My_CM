@@ -13,7 +13,7 @@
 
 		<view class="commentInputView" hidden="{{!isInput}}">
 			<view class="text-status">
-				<textarea placeholder="请输入…" focus="{{focusInput}}" bindfocus="inputFocus" bindblur="inputBlur"></textarea>
+				<textarea placeholder="请输入…" focus="{{focusInput}}" bindinput="handleInput" bindfocus="inputFocus" bindblur="inputBlur"></textarea>
 			</view>
 			<button class="send" bindtap="comfirmStatus">确定</button>
 		</view>
