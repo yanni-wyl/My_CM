@@ -1,18 +1,27 @@
-// pages/myAttendence/myAttendence.js
+var myapp = getApp()
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-
+    student:'',
+    stuName:''
   },
-
+  clicToChat:function(){
+    wx.navigateTo({
+      url: '../chat/chat?id=1',
+    })
+  },
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    let items = JSON.parse(options.jsonStr)
+    this.setData({
+      stuName:items,
+      student:myapp.globalInfo
+    })
   },
 
   /**

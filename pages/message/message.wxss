@@ -5,41 +5,45 @@
 }
 
 .main-container {
-  height: 100%;
-  width: 90%;
-  margin: 5%;
+  height: 80%;
+  width: 80%;
+  margin: 10% 5% 0 8%;
   display: flex;
   flex-wrap: wrap;
 }
 
-.members{
-  margin-left: 6%;
-  margin-top: 8%; 
+.for {
+  margin-left: 5%;
 }
-.member{
+
+.member {
   width: 120rpx;
   height: 120rpx;
   background-size: 120rpx 120rpx;
 }
 
-.text{
-  line-height: 300rpx;
+.text {
   display: flex;
   justify-content: center;
   font-size: 30rpx;
 }
-.stu1{
+/* 
+.stu1 {
   background-image: url(https://i.loli.net/2020/03/29/vadQWo8HInwZM6y.png);
 }
-.stu2{
-  background-image: url(https://i.loli.net/2020/03/29/Fsui2qk7cgKWTtZ.jpg);  
+
+.stu2 {
+  background-image: url(https://i.loli.net/2020/03/29/Fsui2qk7cgKWTtZ.jpg);
 }
-.stu3{
-  background-image: url(https://i.loli.net/2020/03/29/jMKAx8aFBVQnyXg.jpg);  
+
+.stu3 {
+  background-image: url(https://i.loli.net/2020/03/29/jMKAx8aFBVQnyXg.jpg);
 }
-.stu4{
-  background-image: url(https://i.loli.net/2020/03/29/cC5niqmuSHfvOr9.jpg);  
+
+.stu4 {
+  background-image: url(https://i.loli.net/2020/03/29/cC5niqmuSHfvOr9.jpg);
 }
-.stu5{
-  background-image: url(https://i.loli.net/2020/03/29/OWAxkr8cQ9wSPYM.jpg);  
-}
+
+.stu5 {
+  background-image: url(https://i.loli.net/2020/03/29/OWAxkr8cQ9wSPYM.jpg);
+} */

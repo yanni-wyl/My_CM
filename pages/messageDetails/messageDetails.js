@@ -1,14 +1,16 @@
-
+var myApp = getApp()
 Page({
   /**
    * 页面的初始数据
    */
   data: {
+    messagesPage: {},
     line: '',
     content: '',
+    time: '',
     focusInput: false,
     isInput: false,
-    inputComment:''
+    inputComment: ''
   },
   commentBtn: function () {
     this.setData({
@@ -16,9 +18,8 @@ Page({
       isInput: true,
     })
   },
-  handleInput:function(e){
-    // console.log(e)
-      this.data.inputComment = e.detail.value
+  handleInput: function (e) {
+    this.data.inputComment = e.detail.value
   },
   inputFocus(e) {
     // console.log(e, '键盘弹起')
@@ -27,6 +28,7 @@ Page({
     })
   },
   inputBlur() {
+
     // console.log('键盘收起')
     this.setData({
       isInput: false
@@ -34,13 +36,12 @@ Page({
   },
   comfirmStatus: function (e) {
     this.data.content.push(this.data.inputComment)
-    console.log(this.data.content)
     wx.showToast({
       title: '评论成功！',
     })
-    // this.setData({
-    //   isInput: false
-    // })
+    this.setData({
+      isInput: false
+    })
 
   },
 
@@ -51,9 +52,11 @@ Page({
     let items = JSON.parse(options.jsonStr)
     var messages = items.split(';')
     var replies = messages[1].split(',')
+    var times = messages[2]
     this.setData({
       line: messages[0],
-      content: replies
+      content: replies,
+      time: times
     })
   },
 
@@ -68,7 +71,9 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
-
+    this.setData({
+      content: this.data.content
+    })
   },
 
   /**

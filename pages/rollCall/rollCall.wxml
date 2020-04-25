@@ -1,26 +1,21 @@
 <view class="main-container">
 	<view wx:if="{{!success}}">
-		<view class="row-container">
-			<view class='picture a'></view>
-			<text class="text-container">王明</text>
-			<checkbox class="check"></checkbox>
-			<view class='icon'></view>
+
+
+		<view wx:for="{{stuInfo}}" wx:key="id" data-textname="{{item.name}}" class="for" bindtap="infoDetails">
+			<view class="members">
+				<image class="member" src="{{item.image}}"></image>
+				<text class="text">{{item.name}}</text>
+			</view>
 		</view>
 
-		<view class="row-container">
-			<view class='picture b'></view>
-			<text class="text-container">韩梅梅</text>
-			<checkbox class="check"></checkbox>
-			<view class='icon'></view>
+		<view wx:for="{{student}}" wx:key="id">
+			<view class="row-container">
+				<image class="picture" src="{{item.image}}"></image>
+				<text class="text-container">{{item.name}}</text>
+				<checkbox class="check"></checkbox>
+			</view>
 		</view>
-
-		<view class="row-container">
-			<view class='picture c'></view>
-			<text class="text-container">张扬</text>
-			<checkbox class="check"></checkbox>
-			<view class='icon'></view>
-		</view>
-
 
 		<view class='save-btn' bindtap='beginRollCall'>开始点名</view>
 	</view>
@@ -29,7 +24,7 @@
 		<view class='congratulation'>
 			<icon type="success" size="20" class='icon-success' />点名结束！</view>
 		<view>
-			<button type="default" size="default" class='back-home' bindtap='backHome'>返回首页</button>
+			<button type="default" size="default" class='back-home' bindtap='backHome'>返回</button>
 		</view>
 	</view>
 

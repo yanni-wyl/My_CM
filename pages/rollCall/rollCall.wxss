@@ -11,8 +11,9 @@ page {
 
 .row-container {
   width: 600rpx;
-  height: 140rpx;
+  /* height: 140rpx; */
   display: flex;
+  flex-wrap: wrap;
   font-size: 32rpx;
   padding-left: 10%;
   padding-top: 2%;
@@ -36,7 +37,7 @@ page {
 .check {
   margin-left: 40%;
 }
-
+/* 
 .a {
   background-image: url(https://i.loli.net/2020/03/29/vadQWo8HInwZM6y.png);
 }
@@ -47,7 +48,7 @@ page {
 
 .c {
   background-image: url(https://i.loli.net/2020/03/29/jMKAx8aFBVQnyXg.jpg);
-}
+} */
 
 .save-btn{
   width: 160rpx;

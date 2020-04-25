@@ -14,7 +14,8 @@
     "pages/record/record",
     "pages/myMessage/myMessage",
     "pages/messageDetails/messageDetails",
-    "pages/notice/notice"
+    "pages/notice/notice",
+    "pages/info/info"
   ],
   "window": {
     "backgroundTextStyle": "light",

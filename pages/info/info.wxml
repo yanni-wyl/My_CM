@@ -1,0 +1,63 @@
+<view class="main-contaienr">
+	<view class="all" wx:for="{{student}}" wx:if="{{item.name == stuName}}" wx:key="name">
+		<!-- <view class="row row1">
+			<label class="title">姓名</label>
+			<label class="title">角色</label>
+			<label class="title">学校</label>
+			<label class="title">专业</label>
+			<label class="title">班级</label>
+			<label class="title">在校否</label>
+			<label class="title">联系方式</label>
+			<label class="title">居住地址</label>
+		</view>
+		<view class="row row2">
+			<text class="content">{{item.name}}</text>
+			<text class="content">{{item.roletext}}</text>
+			<text class="content">{{item.school}}</text>
+			<text class="content">{{item.majority}}</text>
+			<text class="content">{{item.class}}</text>
+			<text class="content">{{item.atSchooltext}}</text>
+			<text class="content">{{item.contact}}</text>
+			<text class="content">{{item.nowAddress}}</text>
+		</view> -->
+
+	
+		<view class='row1'>个人资料</view>
+
+		<view class='row'>
+			<label class="title">姓名</label>
+			<text class="content">{{item.name}}</text>
+		</view>
+		<view class='row'>
+			<label class="title">角色</label>
+			<text class="content">{{item.roletext}}</text>
+		</view>
+		<view class='row'>
+			<label class="title">学校</label>
+			<text class="content">{{item.school}}</text>
+		</view>
+		<view class='row'>
+			<label class="title">专业</label>
+			<text class="content">{{item.majority}}</text>
+		</view>
+		<view class='row'>
+			<label class="title">班级</label>
+			<text class="content">{{item.class}}</text>
+		</view>
+		<view class='row'>
+			<label class="title">在校否</label>
+			<text class="content content1">{{item.atSchooltext}}</text>
+		</view>
+		<view class='row'>
+			<label class="title">联系方式</label>
+			<text class="content content2">{{item.contact}}</text>
+		</view>
+		<view class='row'>
+			<label class="title">居住地址</label>
+			<text class="content content2">{{item.nowAddress}}</text>
+		</view>
+		<view class='row1' bindtap="clicToChat">点击聊天</view>
+
+	</view>
+
+</view>

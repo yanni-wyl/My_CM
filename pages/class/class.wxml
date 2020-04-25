@@ -6,7 +6,7 @@
 		</view>
 
 		<view class="bottom-container">
-			<view  wx:for="{{content}}" wx:key="notice" data-textnotice="{{item.notice}}" data-textcontent="{{item.noticeContent}}" data-textdate="{{item.date}}" class="medium-text" bindtap="noticeFX">{{item.notice}}</view>
+			<view  wx:for="{{content}}" wx:key="notice" data-textnotice="{{item.notice}}" data-textcontent="{{item.noticeContent}}" data-textdate="{{item.date}}" class="medium-text" bindtap="noticeFX">《{{item.notice}}》</view>
 		</view>
 
 		<view class="top-icon">
@@ -15,7 +15,7 @@
 		</view>
 
 		<view class="medium-container">
-			<view  wx:for="{{messageContent}}" wx:key="line" data-textmessage="{{item.line}}" data-textcontent="{{item.lineReply}}" class="medium-text" bindtap="messageFX">** {{item.line}}</view>
+			<view  wx:for="{{messageContent}}" wx:key="line" data-textmessage="{{item.line}}" data-textcontent="{{item.lineReply}}" data-texttime="{{item.time}}" class="medium-text" bindtap="messageFX">** {{item.line}}</view>
 		</view>
 
 		<view class="top-icon">

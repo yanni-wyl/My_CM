@@ -1,0 +1,42 @@
+.page {
+  height: 100%;
+  width: 100%;
+}
+
+.main-container {
+  height: 80%;
+  width: 80%;
+  margin: 5%;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: blue;
+}
+.all{
+  padding-top: 5%;
+}
+.row{
+  margin-left: 10%;
+  margin-top: 5%;
+  padding-bottom: 3%;
+  border-bottom: darkgray 1rpx solid;
+
+}
+.row1{
+  font-weight: 600;
+  margin-left: 10%;
+  margin-top: 5%;
+}
+.title{
+  color: #13227a;
+  font-weight: 500;
+}
+.content{
+  margin-left: 30%;
+  color: darkgray;
+}
+.content1{
+  margin-left: 25%;
+}
+.content2{
+  margin-left: 20%;
+}

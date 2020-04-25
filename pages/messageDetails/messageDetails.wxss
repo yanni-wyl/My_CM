@@ -31,6 +31,10 @@ page {
   background-image: url(https://i.loli.net/2020/04/17/mn14T85ac3uehbr.png);
 }
 
+.time{
+  margin-left: 5%;
+}
+
 .medium-icon{
   display: flex;  
   margin: 2% 0 2% 80%;

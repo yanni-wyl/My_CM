@@ -1,18 +1,30 @@
-// pages/messages/messages.js
+var myapp = getApp()
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-
+    stuInfo: '',
+    name: ''
   },
-
+  infoDetails: function (e) {
+    console.log(e.currentTarget.dataset.textname)
+    var transmitName = e.currentTarget.dataset.textname
+    let str = JSON.stringify(transmitName)
+    wx.navigateTo({
+      url: '../info/info?jsonStr=' + str,
+    })
+  },
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    console.log(myapp.globalInfo)
+    this.setData({
+      // pictures:myapp.globalInfo
+      stuInfo: myapp.globalInfo
+    })
   },
 
   /**

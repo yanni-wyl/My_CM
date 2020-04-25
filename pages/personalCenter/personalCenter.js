@@ -49,8 +49,12 @@ Page({
     this.setData({
       userInfo: e.detail.userInfo,
       hasUserInfo: true
+    })  
+  },
+  chekInfo:function(e){
+    wx.navigateTo({
+      url: '../editMaterials/editMaterials?id=1',
     })
-  
   },
 
   /**

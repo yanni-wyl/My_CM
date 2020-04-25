@@ -1,42 +1,13 @@
-// pages/homeWork/homeWork.js
-
+var myApp = getApp()
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    content: [{
-      notice: '《关于开学延期通知》',
-      noticeContent: '现通知：由于突发疫情，开学时间推迟，具体开学时间等候通知，不可私自提前返校。',
-      date: '2020-2-20'
-    },
-    {
-      notice: '《网上主题班会召开》',
-      noticeContent: '拟通知：近期将展开网上主题班会，班干部组织准备，具体时间稍后通知。',
-      date: '2020-3-9'
-    }, {
-      notice: '《毕业设计进展汇报》',
-      noticeContent: '请各毕业生向各自导师汇报近期毕业设计开展情况',
-      date: '2020-4-6'
-    }, {
-      notice: '《返校问题》',
-      noticeContent: '再次强调，各位同学特殊时期做好安全防护，不得擅自返校！',
-      date: '2020-4-15'
-    }],
-    messageContent: [{
-      line: '什么时候能开学？',
-      lineReply: ['不知道呀', '同问']
-    }, {
-      line: '什么时候可以回学校？',
-      lineReply: []
-    }],
-    Message: [
-      {
-        'time': '',
-        'content': ''
-      }
-    ]
+    content: '',
+    messageContent: '',
+    Message: []
   },
   noticeFX: function (e) {
     var noticeName = e.target.dataset.textnotice;
@@ -51,7 +22,9 @@ Page({
     console.log(e)
     var replies = e.target.dataset.textcontent;
     var messages = e.target.dataset.textmessage
-    let strs = JSON.stringify(messages + ';' + replies)
+    var time = e.target.dataset.texttime
+    var id = e.target.id
+    let strs = JSON.stringify(messages + ';' + replies + ';' + time+';'+id)
     console.log(replies)
     wx.navigateTo({
       url: '../messageDetails/messageDetails?jsonStr=' + strs,
@@ -78,15 +51,18 @@ Page({
     var s = date.getSeconds();
     var now = Y + "-" + M + "-" + D + " " + h + ":" + m + ":" + s
     var array = {}
+    array.line = e.detail.value
     array.time = now
-    array.content = e.detail.value
     this.setData({
       Message: array
     })
+    console.log(this.data.Message)
   },
 
   //添加留言
   submitMessage: function (e) {
+    myApp.messageContent.push(this.data.Message)
+    console.log(myApp.messageContent)
     this.setData({
       success: true
     })
@@ -105,7 +81,9 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    // this.setData({
+    //   messageContent:myApp.messageContent
+    // })
   },
 
   /**
@@ -118,7 +96,11 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
-
+    this.setData({
+      content: myApp.notices,
+      messageContent: myApp.messageContent
+    })
+    console.log(this.data.messageContent)
   },
 
   /**

@@ -9,26 +9,30 @@ Page({
    
   },
   materialsData:{
-    role:"",
-    atSchool:"",
-    position:""
+    id:'',
+    name:"",
+    role:"teacher",
+    roletext:"教师",
+    atSchool:"yes",
+    atSchooltext:"是",
     },
 
   handleSelectID:function(event){
-    if(event.detail.value == "teacher"){
-      this.materialsData.role = '教师'    
+    this.materialsData.role = event.detail.value;
+    if(event.detail.value == "student"){
+      this.materialsData.roletext = '学生'    
     } else {
-      this.materialsData.role = '学生'    
+      this.materialsData.roletext = '教师'    
     }
 },
 
   handleInSchool:function(event){
-    if(event.detail.value == "yes"){
-      this.materialsData.atSchool = '是'    
+    this.materialsData.atSchool = event.detail.value;
+    if(event.detail.value == "no"){
+      this.materialsData.atSchooltext = '否'    
     } else {
-      this.materialsData.atSchool = '否'    
+      this.materialsData.atSchooltext = '是'    
     }
-      console.log(this.materialsData.atSchool)
   },
 
   
@@ -39,7 +43,16 @@ Page({
   handleInputContact:function(event){
       this.materialsData.contact = event.detail.value   
   },
-  
+  handleInputSchool:function(event){
+    this.materialsData.school = event.detail.value
+  },  
+  handleInputMajority:function(event){
+    this.materialsData.majority = event.detail.value
+  },
+  handleInputClass:function(event){
+    this.materialsData.class = event.detail.value
+  },
+
   handleInputNowAddress:function(event){
       this.materialsData.nowAddress = event.detail.value   
   },
@@ -74,7 +87,7 @@ Page({
     }
     if (this.materialsData.contact == "点击选择，要勾选哦" || !this.materialsData.contact) {
       wx.showToast({
-        title: '请填写您的联系方式',
+        title: '请填写联系方式',
         icon: 'loading',
         duration: 2000
       })
@@ -82,22 +95,31 @@ Page({
     }
     if (this.materialsData.nowAddress == "点击选择，要勾选哦" || !this.materialsData.nowAddress) {
       wx.showToast({
-        title: '请填写您的居住地址',
+        title: '请填写居住地址',
         icon: 'loading',
         duration: 2000
       })
       return
     }
+    console.log(myApp.globalInfo.length)
+    
+    this.materialsData.id = myApp.globalInfo.length
+    this.materialsData.image = myApp.globalData.userInfo.avatarUrl
     //数组方法push，将表单数据保存到app.js里的globalInfo数组中去
     myApp.globalInfo.push(this.materialsData)
     console.log(myApp.globalInfo)
     this.setData({
-      success: true
+      success:true
     })
   },
   backHome: function() {
     //页面返回API
-    wx.navigateBack()
+    this.setData({
+      success:false
+    })
+    wx.navigateBack({
+      delta: 2
+    })
   },
   /**
    * 生命周期函数--监听页面加载

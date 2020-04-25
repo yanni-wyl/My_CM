@@ -167,6 +167,13 @@
 					"id": -1,
 					"name": "pages/messageDetails/messageDetails",
 					"pathName": "pages/messageDetails/messageDetails",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/info/info",
+					"pathName": "pages/info/info",
 					"scene": null
 				}
 			]

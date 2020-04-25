@@ -1,6 +1,5 @@
-<!--pages/personalCenter/personalCenter.wxml-->
 <view class="top">
-	<view class="userInfo">
+	<view class="userInfo" bindtap="chekInfo">
 		<button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 点击登录 </button>
 		<block wx:else>
 			<image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
@@ -13,33 +12,33 @@
 <view class="settigs">
 	<navigator url="/pages/editMaterials/editMaterials">
 		<view class="middle edit">
-			<view class='icon a'></view>
+			<view class='icon editinfo'></view>
 			<text>编辑资料</text>
-			<view class='icon f'></view>
+			<view class='icon right'></view>
 		</view>
 	</navigator>
 
 	<navigator url="/pages/myClass/myClass">
 		<view class="middle address">
-			<view class='icon c'></view>
-			<text>我的作业</text>
-			<view class='icon f'></view>
+			<view class='icon myclass'></view>
+			<text>我的班级</text>
+			<view class='icon right'></view>
 		</view>
 	</navigator>
 
 	<navigator url="/pages/record/record">
 		<view class="middle rollC">
-			<view class='icon d'></view>
+			<view class='icon attendence'></view>
 			<text>我的考勤</text>
-			<view class='icon f'></view>
+			<view class='icon right'></view>
 		</view>
 	</navigator>
 
 	<navigator url="/pages/myMessage/myMessage">
 		<view class="middle rollC">
-			<view class='icon e'></view>
+			<view class='icon leavemessage'></view>
 			<text>我的留言</text>
-			<view class='icon f'></view>
+			<view class='icon right'></view>
 		</view>
 	</navigator>
 

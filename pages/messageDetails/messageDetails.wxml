@@ -6,6 +6,8 @@
 			<text class="top-line">{{line}}</text>
 		</view>
 
+		<text class="time">{{time}}</text>
+
 		<view class="medium-icon">
 			<view class="icon reply"></view>
 			<view class="text" bindtap="commentBtn">评论</view>
